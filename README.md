@@ -1,4 +1,4 @@
-### ☣️ The Most Powerfull Userbot ☣️
+☣️ The Most Powerfull Userbot ☣️
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c51539e67b483bb8d7749acca51d3a)](https://app.codacy.com/gh/HellBoy-OP/HellBot?utm_source=github.com&utm_medium=referral&utm_content=HellBoy-OP/HellBot&utm_campaign=Badge_Grade_Settings)
 [![Python 3.6](https://img.shields.io/badge/Python-3.6%20or%20newer-blue.svg)](https://www.python.org/downloads/release/python-360/)
@@ -7,12 +7,12 @@
 [![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kraken_the_badass)
 
 
-# †hê Hêllẞø†
+# †hê 𝚁𝚘𝚢𝚊𝚕𝚄𝚜𝚎𝚛-𝙱𝚘𝚝
 
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
 
-This is the one and only official HellBot Userbot made by [@Kraken_The_BadASS](https://t.me/kraken_the_badass) Also join support channel and group :- https://t.me/HellBot_Official Enjoy Your Bot!!💝
-[![HellBot logo](https://telegra.ph/file/2165457cc7e428ff64919.jpg)](https://t.me/hellbot_official)
+This is the one and only official RoyalBot Userbot made by [@No_Needz_Approval](https://t.me/No_Needz_Approval) Also join support channel and group :- https://t.me/RoyalUserBot_Support Enjoy Your Bot!!💝
+[![RoyalBot logo](https://telegra.ph/file/b3818868fea51e007bae6.jpg)](https://t.me/RoyalUserBot_Official)
 
 
 ### The owner would not be responsible for any kind of bans due to the bot...
@@ -21,12 +21,12 @@ This is the one and only official HellBot Userbot made by [@Kraken_The_BadASS](h
 # FORK AT YOUR OWN RISK
 
 # Credits
-### • [JaaduBot](https://github.com/Amberyt/JaaduBot)
+### • [@Kraken_The_BadASS]
 ## One and only. Others with some misfuntioning brain stay out from this SUPER POWERFULL BOT😏
 
 ## Official Support
-<a href="https://t.me/HellBot_Official"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/HellBot_Official_Chat"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/RoyalUserBot_Official"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/RoyalUserBot_Support"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 ## Video Tutorial
 <a href="https://youtu.be/M2FQJq_sHp4"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
@@ -42,8 +42,8 @@ This is the one and only official HellBot Userbot made by [@Kraken_The_BadASS](h
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/HellBoy-OP/HellBot
-cd HellBot
+git clone https://github.com/abhishek61728/ROYALUSER-BOT
+cd RoyalBot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
