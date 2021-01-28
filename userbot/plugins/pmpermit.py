@@ -9,7 +9,7 @@ from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
 from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
-from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, hell_ID
+from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, Royal_ID
 from userbot.uniborgConfig import Config
 from userbot.utils import admin_cmd
 from userbot.cmdhelp import CmdHelp
@@ -17,15 +17,15 @@ from userbot.cmdhelp import CmdHelp
 PM_TRUE_FALSE = Config.PM_DATA
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
-HELLPIC = (
+ROYALPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/b3818868fea51e007bae6.jpg"
+    else "https://telegra.ph/file/0176918211f981aa9f059.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
-ABHISHEK = (
+ROYAL = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
     else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
@@ -35,7 +35,7 @@ USER_BOT_WARN_ZERO = "**You were spamming my sweet master's inbox, henceforth yo
 USER_BOT_NO_WARN = (
     "Hello, This is **𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝 Úl†rã Pr¡va†e Security Protocol⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
-    f"\n**{ABHISHEK}**\n\n"
+    f"\n**{ROYAL}**\n\n"
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
 )
 
@@ -231,7 +231,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             except:
                 return
         r = await borg.send_file(
-            event.chat_id, HELLPIC, caption=USER_BOT_NO_WARN, force_document=False
+            event.chat_id, ROYALPIC, caption=USER_BOT_NO_WARN, force_document=False
         )
         PM_WARNS[chat_id] += 1
         if chat_id in PREV_REPLY_MESSAGE:
