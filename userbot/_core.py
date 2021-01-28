@@ -11,7 +11,7 @@ from userbot import bot as royalbot
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "royal"
-royal_logo = "./RoyalBot_logo.jpg"
+royal_logo = "./Royal/RoyalBot_logo.jpg"
 
 
 @royalbot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
