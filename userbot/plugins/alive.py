@@ -14,7 +14,7 @@ if ludosudo:
 else:
     sudou = "False"
 
-ABHISHEK = bot.uid
+𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝 = bot.uid
 
 PM_IMG = "https://telegra.ph/file/b3818868fea51e007bae6.jpg"
 pm_caption = "__**🔥🔥𝚁𝚘𝚢𝚊𝚕𝚄𝚜𝚎𝚛-𝙱𝚘𝚝🔥🔥**__\n\n"
