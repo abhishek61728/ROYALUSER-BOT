@@ -27,13 +27,13 @@ pm_caption += "🛡️TELETHON🛡️ : `1.15.0` \n"
 
 pm_caption += f"😈𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝😈       : __**{royalversion}**__\n"
 
-pm_caption += f"⚜️Sudo⚜️            : `{sudou}`\n"
+pm_caption += f"⚜️Sudo⚜️             : `{sudou}`\n"
 
 pm_caption += "⚠️CHANNEL⚠️    : [ᴊᴏɪɴ](https://t.me/RoyalUserBot_Official)\n"
 
-pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/No_Needz_Approval)\n"
+pm_caption += "🔥CREATOR🔥     : [Nub Here](https://t.me/No_Needz_Approval)\n"
 
-pm_caption += "😆OWNER😆      : [Nub Here](https://t.me/Apoorvroy86)\n"
+pm_caption += "😆OWNER😆        : [Nub Here](https://t.me/Apoorvroy86)\n"
 
 pm_caption += "🤩SUPPORTER🤩  : [HellBoy](https://t.me/Kraken_The_BadASS)\n"
 
