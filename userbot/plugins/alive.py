@@ -29,13 +29,13 @@ pm_caption += f"😈𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝😈       : __**{royalvers
 
 pm_caption += f"⚜️Sudo⚜️            : `{sudou}`\n"
 
-pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/RoyalUserBot_Official)\n"
+pm_caption += "⚠️CHANNEL⚠️    : [ᴊᴏɪɴ](https://t.me/RoyalUserBot_Official)\n"
 
 pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/No_Needz_Approval)\n"
 
-pm_caption += "😆OWNER😆    :[Nub Here](https://t.me/Apoorvroy86)\n"
+pm_caption += "😆OWNER😆      : [Nub Here](https://t.me/Apoorvroy86)\n"
 
-pm_caption += "🤩SUPPORTER🤩    : [HellBoy](https://t.me/Kraken_The_BadASS)\n"
+pm_caption += "🤩SUPPORTER🤩  : [HellBoy](https://t.me/Kraken_The_BadASS)\n"
 
 pm_caption += "    [✨REPO✨](https://github.com/abhishek61728/ROYALUSER-BOT) 🔹 [📜License📜](https://github.com/abhishek61728/ROYALUSER-BOT/blob/main/LICENSE)"
 
