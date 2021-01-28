@@ -10,7 +10,7 @@ from userbot import ALIVE_NAME, CmdHelp
 from userbot import bot as royalbot
 
 DELETE_TIMEOUT = 5
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Royal User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "royal"
 royal_logo = "./RoyalBot_logo.jpg"
 
 
