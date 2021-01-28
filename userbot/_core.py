@@ -78,7 +78,7 @@ async def install(event):
     
 @royalbot.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
 @royalbot.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
-async def unload(kraken):
+async def unload(royal):
     if royal.fwd_from:
         return
     shortname = royal.pattern_match["shortname"]
