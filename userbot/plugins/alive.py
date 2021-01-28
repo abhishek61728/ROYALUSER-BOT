@@ -20,7 +20,7 @@ PM_IMG = "https://telegra.ph/file/b3818868fea51e007bae6.jpg"
 pm_caption = "__**🔥🔥𝚁𝚘𝚢𝚊𝚕𝚄𝚜𝚎𝚛-𝙱𝚘𝚝🔥🔥**__\n\n"
 
 pm_caption += (
-    f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**『[{DEFAULTUSER}](tg://user?id={ABHISHEK})』**\n\n"
+    f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**『[{DEFAULTUSER}](tg://user?id={𝚁𝚘𝚢𝚊𝚕})』**\n\n"
 )
 
 pm_caption += "🛡️TELETHON🛡️ : `1.15.0` \n"
