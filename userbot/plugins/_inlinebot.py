@@ -47,7 +47,7 @@ def button(page, modules):
     for pairs in pairs[page]:
         buttons.append(
             [
-                custom.Button.inline(f"{royal_emoji} " + pair, data=f"Information[{page}]({pair})")
+                custom.Button.inline(f"{hell_emoji} " + pair, data=f"Information[{page}]({pair})")
                 for pair in pairs
             ]
         )
@@ -55,13 +55,13 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"◀️ ᏰᎯᏣᏦ {royal_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"◀️ ᏰᎯᏣᏦ {hell_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
                f"•{hell_emoji} ❌ {hell_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{royal_emoji} ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{hell_emoji} ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
