@@ -94,14 +94,14 @@ async def set_group_photo(gpic):
             photo = await gpic.client.download_file(replymsg.media.document)
         else:
             await edit_or_reply(gpic, INVALID_MEDIA)
-    kraken = None
+    royal = None
     if photo:
         try:
             await gpic.client(
                 EditPhotoRequest(gpic.chat_id, await gpic.client.upload_file(photo))
             )
             await edit_or_reply(gpic, CHAT_PP_CHANGED)
-            kraken = True
+            royal = True
         except PhotoCropSizeSmallError:
             await edit_or_reply(gpic, PP_TOO_SMOL)
         except ImageProcessFailedError:
@@ -135,7 +135,7 @@ async def promote(promt):
         delete_messages=True,
         pin_messages=True,
     )
-    hellevent = await edit_or_reply(promt, "`Promoting...`")
+    royalevent = await edit_or_reply(promt, "`Promoting...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "ǟɖʍɨռ"
@@ -166,7 +166,7 @@ async def demote(dmod):
     if not admin and not creator:
         await edit_or_reply(dmod, NO_ADMIN)
         return
-    hellevent = await edit_or_reply(dmod, "`Demoting...`")
+    royalevent = await edit_or_reply(dmod, "`Demoting...`")
     rank = "admeme"
     user = await get_user_from_event(dmod)
     user = user[0]
@@ -183,9 +183,9 @@ async def demote(dmod):
     try:
         await dmod.client(EditAdminRequest(dmod.chat_id, user.id, newrights, rank))
     except BadRequestError:
-        await hellevent.edit(NO_PERM)
+        await royalevent.edit(NO_PERM)
         return
-    await hellevent.edit("`Demoted retard Successfully..... Better luck next time🚶`")
+    await royalevent.edit("`Demoted retard Successfully..... Better luck next time🚶`")
     if BOTLOG:
         await dmod.client.send_message(
             BOTLOG_CHATID,
@@ -212,19 +212,19 @@ async def ban(bon):
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
     except BadRequestError:
-        await hellevent.edit(NO_PERM)
+        await royalevent.edit(NO_PERM)
         return
     try:
         reply = await bon.get_reply_message()
         if reply:
             await reply.delete()
     except BadRequestError:
-        await hellevent.edit("`I ain't got msg deleting right. But still Banned!`")
+        await royalevent.edit("`I ain't got msg deleting right. But still Banned!`")
         return
     if reason:
-        await hellevent.edit(f"`{str(user.id)}` is banned !!\nReason: {reason}")
+        await royalevent.edit(f"`{str(user.id)}` is banned !!\nReason: {reason}")
     else:
-        await hellevent.edit(f"{str(user.id)} is banned😏 !!")
+        await royalevent.edit(f"{str(user.id)} is banned😏 !!")
     if BOTLOG:
         await bon.client.send_message(
             BOTLOG_CHATID,
@@ -244,14 +244,14 @@ async def nothanos(unbon):
     if not admin and not creator:
         await edit_or_reply(unbon, NO_ADMIN)
         return
-    hellevent = await edit_or_reply(unbon, "`Unbanning...`")
+    royalevent = await edit_or_reply(unbon, "`Unbanning...`")
     user = await get_user_from_event(unbon)
     user = user[0]
     if not user:
         return
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await hellevent.edit("```Unbanned Successfully. Granting another chance🚶.```")
+        await royalevent.edit("```Unbanned Successfully. Granting another chance🚶.```")
         if BOTLOG:
             await unbon.client.send_message(
                 BOTLOG_CHATID,
@@ -260,7 +260,7 @@ async def nothanos(unbon):
                 f"CHAT: {unbon.chat.title}(`{unbon.chat_id}`)",
             )
     except UserIdInvalidError:
-        await hellevent.edit("`Uh oh my unban logic broke!`")
+        await royalevent.edit("`Uh oh my unban logic broke!`")
 
 
 @command(incoming=True)
