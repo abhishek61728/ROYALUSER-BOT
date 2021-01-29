@@ -7,7 +7,7 @@ from userbot.utils import *
 
 @bot.on(admin_cmd(pattern="plinfo(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="plinfo(?: |$)(.*)", allow_sudo=True))
-async def hellbott(event):
+async def royalbott(event):
     """ .plinfo cmd """
     args = event.pattern_match.group(1).lower()
     if args:
