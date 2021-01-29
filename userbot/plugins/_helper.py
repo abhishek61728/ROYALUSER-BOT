@@ -12,8 +12,8 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 async def yardim(event):
     tgbotusername = Config.TG_BOT_USER_NAME_BF_HER
     input_str = event.pattern_match.group(1)
-    if tgbotusername is not None or hell_input == "text":
-        results = await event.client.inline_query(tgbotusername, "@HellBot_Official")
+    if tgbotusername is not None or royal_input == "text":
+        results = await event.client.inline_query(tgbotusername, "@RoyalUserBot_Official)
         await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
         )
@@ -36,9 +36,9 @@ async def info(event):
     input_str = event.pattern_match.group(1)
     if input_str == "text":
         string = (
-            "Total {count} commands found in {plugincount} sudo plugins of Hêllẞø†\n\n"
+            "Total {count} commands found in {plugincount} sudo plugins of 𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝\n\n"
         )
-        hellcount = 0
+        royalcount = 0
         plugincount = 0
         for i in sorted(SUDO_LIST):
             plugincount += 1
@@ -49,7 +49,7 @@ async def info(event):
                 hellcount += 1
             string += "\n"
         if len(string) > 4095:
-            data = string.format(count=hellcount, plugincount=plugincount)
+            data = string.format(count=royalcount, plugincount=plugincount)
             key = (
                 requests.post(
                     "https://nekobin.com/api/documents", json={"content": data}
@@ -59,23 +59,23 @@ async def info(event):
                 .get("key")
             )
             url = f"https://nekobin.com/{key}"
-            reply_text = f"All commands of the Hêllẞø† are [here]({url})"
+            reply_text = f"All commands of the 𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝 are [here]({url})"
             await event.reply(reply_text, link_preview=False)
             return
         await event.reply(
-            string.format(count=hellcount, plugincount=plugincount), link_preview=False
+            string.format(count=royalcount, plugincount=plugincount), link_preview=False
         )
         return
     if input_str:
         if input_str in SUDO_LIST:
             string = "<b>{count} Commands found in plugin {input_str}:</b>\n\n"
-            hellcount = 0
+            royalcount = 0
             for i in SUDO_LIST[input_str]:
                 string += f"  •  <code>{i}</code>"
                 string += "\n"
-                hellcount += 1
+                royalcount += 1
             await event.reply(
-                string.format(count=hellcount, input_str=input_str), parse_mode="HTML"
+                string.format(count=royalcount, input_str=input_str), parse_mode="HTML"
             )
         else:
             reply = await event.reply(input_str + " is not a valid plugin!")
@@ -86,7 +86,7 @@ async def info(event):
         string = "<b>Please specify which plugin do you want help for !!\
             \nNumber of plugins : </b><code>{count}</code>\
             \n<b>Usage:</b> <code>.help plugin name</code>\n\n"
-        hellcount = 0
+        royalcount = 0
         for i in sorted(SUDO_LIST):
             string += "≈ " + f"<code>{str(i)}</code>"
             string += " "
