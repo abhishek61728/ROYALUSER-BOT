@@ -18,7 +18,7 @@ Made With Love By Team RoyalBot
 """
                                                                                                             
 print("")
-print(Style.BRIGHT + Fore.MAGENTA + kraken)
+print(Style.BRIGHT + Fore.MAGENTA + royal)
 print(Style.RESET_ALL)
 print(Style.BRIGHT + Fore.BLUE + logo)
 print(Style.RESET_ALL)
