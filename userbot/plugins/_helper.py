@@ -90,5 +90,5 @@ async def info(event):
         for i in sorted(SUDO_LIST):
             string += "≈ " + f"<code>{str(i)}</code>"
             string += " "
-            hellcount += 1
-        await event.reply(string.format(count=hellcount), parse_mode="HTML")
+            royalcount += 1
+        await event.reply(string.format(count=royalcount), parse_mode="HTML")
