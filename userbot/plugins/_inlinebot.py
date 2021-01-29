@@ -29,7 +29,7 @@ from userbot.utils import *
 from userbot.uniborgConfig import Config
 
 royal_row = Config.BUTTONS_IN_HELP
-royal_emoji = Config.EMOJI_IN_HELP
+hell_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
 # royalbot
 
@@ -80,7 +80,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running HellBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running Royal-Bot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
