@@ -1,6 +1,6 @@
 import time
 
-from userbot import ALIVE_NAME, StartTime, royalversion as hellversion
+from userbot import ALIVE_NAME, StartTime, royalversion
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
@@ -13,7 +13,7 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "RoyalUser"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "RoyalUser"
 ROYAL_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ʟɛɢɛռɖaʀʏ_ᴀғ_𝚁𝚘𝚢𝚊𝚕𝙱𝚘𝚝"
 
