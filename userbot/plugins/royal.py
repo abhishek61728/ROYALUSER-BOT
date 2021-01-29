@@ -1,6 +1,6 @@
 import time
 
-from userbot import ALIVE_NAME, StartTime, royalversion as hellversion
+from userbot import ALIVE_NAME, StartTime, “royalversion” as hellversion
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
