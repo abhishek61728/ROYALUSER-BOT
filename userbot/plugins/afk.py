@@ -1,5 +1,5 @@
 # by uniborg...Thanks @spechide
-# Now will be used in HellBot too....
+# Now will be used in RoyalBot too....
 import asyncio
 import datetime
 from datetime import datetime
@@ -36,11 +36,11 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        hellbot = await borg.send_message(
+        royalbot = await borg.send_message(
             event.chat_id,
             "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
             + total_afk_time
-            + "`", file=hellpic
+            + "`", file=royalpic
         )
         try:
             await borg.send_message(  # pylint:disable=E0602
@@ -59,7 +59,7 @@ async def set_not_afk(event):
                 silent=True,
             )
         await asyncio.sleep(5)
-        await hellbot.delete()
+        await royalbot.delete()
         USER_AFK = {}  # pylint:disable=E0602
         afk_time = None  # pylint:disable=E0602
 
@@ -95,7 +95,7 @@ async def on_afk(event):
   if reason
             else f"**Heyy!**\n__I am currently unavailable.__\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶"
         )
-        msg = await event.reply(message_to_reply, file=hellpic)
+        msg = await event.reply(message_to_reply, file=royalpic)
         await asyncio.sleep(2)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
             await last_afk_message[event.chat_id].delete()  # pylint:disable=E0602
@@ -121,7 +121,7 @@ async def _(event):
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     reason = event.pattern_match.group(1)
-    hellpic = await event.client.download_media(krakenop)
+    royalpic = await event.client.download_media(krakenop)
     if not USER_AFK:  # pylint:disable=E0602
         last_seen_status = await borg(  # pylint:disable=E0602
             functions.account.GetPrivacyRequest(types.InputPrivacyKeyStatusTimestamp())
@@ -131,7 +131,7 @@ async def _(event):
         USER_AFK = f"yes: {reason} {hellpic}"  # pylint:disable=E0602
         if reason:
             await borg.send_message(
-                event.chat_id, f"__**I'm going afk🚶**__ \n⚜️ Because `{reason}`", file=hellpic
+                event.chat_id, f"__**I'm going afk🚶**__ \n⚜️ Because `{reason}`", file=royalpic
             )
         else:
             await borg.send_message(event.chat_id, f"**I am Going afk!**🚶", file=hellpic)
@@ -140,7 +140,7 @@ async def _(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
-                f"#AFKTRUE \nSet AFK mode to True, and Reason is {reason}",file=hellpic
+                f"#AFKTRUE \nSet AFK mode to True, and Reason is {reason}",file=royalpic
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             logger.warn(str(e))  # pylint:disable=E0602
