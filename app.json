@@ -1,6 +1,6 @@
 {
   "name": "𝚁𝚘𝚢𝚊𝚕𝚄𝚜𝚎𝚛-𝙱𝚘𝚝",
-  "description": "The best userbot made by @No_Needz_Approval. Made with Love And Phone And Hardwork and... Nhi aur kahi se to nhi bana....For Support Join @RoyalUserBot_Official ",
+  "description": "The best userbot made by @No_Needz_Approval. Made with Love And Phone And Hardwork and... Nhi aur kahi se to nhi bana....For Support Join @RoyalBot_Official ",
   "logo": "https://telegra.ph/file/4b29cbcf33b6a16acd3ed.jpg ",
     "keywords": [
     "telegram",
@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/abhishek61728/ROYALUSER-BOT",
   "website": "https://github.com/abhishek61728/ROYALUSER-BOT",
-  "success_url": "https://t.me/RoyalUserBot_Official",
+  "success_url": "https://t.me/RoyalBot_Official",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
