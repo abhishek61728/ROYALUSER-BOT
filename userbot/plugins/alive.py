@@ -29,7 +29,7 @@ pm_caption += f"😈𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝😈  : __**{royalversion}*
 
 pm_caption += f"⚜️Sudo⚜️             : `{sudou}`\n"
 
-pm_caption += "⚠️CHANNEL⚠️    : [ᴊᴏɪɴ](https://t.me/RoyalUserBot_Official)\n"
+pm_caption += "⚠️CHANNEL⚠️    : [ᴊᴏɪɴ](https://t.me/RoyalBot_Official)\n"
 
 pm_caption += "🔥CREATOR🔥     : [Nub Here](https://t.me/No_Needz_Approval)\n"
 
