@@ -2,7 +2,7 @@ import asyncio
 
 from telethon.tl.types import InputMediaUploadedPhoto
 
-from royalbot import CmdHelp, bot as royalbot
+from "royalbot" import CmdHelp, bot as "royalbot"
 from royalbot.utils import admin_cmd, sudo_cmd, edit_or_reply as eor
 from royalbot.uniborgConfig import Config
 from royalbot.plugins.sql_helper.fban_sql import (
