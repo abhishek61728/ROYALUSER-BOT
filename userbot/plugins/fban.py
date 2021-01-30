@@ -2,10 +2,10 @@ import asyncio
 
 from telethon.tl.types import InputMediaUploadedPhoto
 
-from hellbot import CmdHelp, bot as hellbot
-from hellbot.utils import admin_cmd, sudo_cmd, edit_or_reply as eor
-from hellbot.uniborgConfig import Config
-from hellbot.plugins.sql_helper.fban_sql import (
+from royalbot import CmdHelp, bot as royalbot
+from royalbot.utils import admin_cmd, sudo_cmd, edit_or_reply as eor
+from royalbot.uniborgConfig import Config
+from royalbot.plugins.sql_helper.fban_sql import (
     add_channel,
     get_all_channels,
     in_channels,
@@ -16,11 +16,11 @@ logs_id = Config.FBAN_LOGGER_GROUP
 
 # Keep all credits pls
 # madewith great effort by @HeisenbergTheDanger
-# modified by @kraken_the_badass for fbans
+# modified by @No_Needz_Approval for fbans
 
 
-@hellbot.on(admin_cmd(pattern="fban ?(.*)"))
-@hellbot.on(sudo_cmd(pattern="fban ?(.*)", allow_sudo=True))
+@royalbot.on(admin_cmd(pattern="fban ?(.*)"))
+@royalbot.on(sudo_cmd(pattern="fban ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -137,7 +137,7 @@ async def _(event):
 # Written by @HeisenbergTheDanger
 
 
-@hellbot.on(admin_cmd(pattern="fadd ?(.*)"))
+@royalbot.on(admin_cmd(pattern="fadd ?(.*)"))
 async def add_ch(event):
     if event.fwd_from:
         return
@@ -177,7 +177,7 @@ async def add_ch(event):
         await event.delete()
 
 
-@hellbot.on(admin_cmd(pattern="fremove ?(.*)"))
+@royalbot.on(admin_cmd(pattern="fremove ?(.*)"))
 async def remove_ch(event):
     if event.fwd_from:
         return
@@ -205,8 +205,8 @@ async def remove_ch(event):
         await event.delete()
 
 
-@hellbot.on(admin_cmd(pattern="fgroups"))
-@hellbot.on(sudo_cmd(pattern="fgroups", allow_sudo=True))
+@royalbot.on(admin_cmd(pattern="fgroups"))
+@royalbot.on(sudo_cmd(pattern="fgroups", allow_sudo=True))
 async def list(event):
     if event.fwd_from:
         return
@@ -231,8 +231,8 @@ async def list(event):
         await eor(event, msg)
 
 
-@hellbot.on(admin_cmd(pattern="fsearch ?(.*)"))
-@hellbot.on(sudo_cmd(pattern="fsearch ?(.*)", allow_sudo=True))
+@royalbot.on(admin_cmd(pattern="fsearch ?(.*)"))
+@royalbot.on(sudo_cmd(pattern="fsearch ?(.*)", allow_sudo=True))
 async def search(event):
     channel_id = event.pattern_match.group(1)
     try:
