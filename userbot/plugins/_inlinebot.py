@@ -75,7 +75,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@RoyalUserBot_Official":
+        if event.query.user_id == bot.uid and query == "@RoyalBot_Official":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
@@ -95,12 +95,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@RoyalUserBot_Official",
-                text="""**Hey! This is [𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝.](https://t.me/RoyalUserBot_Official) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝.](https://t.me/RoyalBot_Official) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/RoyalUserBot_Official"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/RoyalBot_Official"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/RoyalUserBot_Support"
+                            "⚡ GROUP ⚡", "https://t.me/RoyalBot_Support_Group"
                         ),
                     ],
                     [
@@ -127,7 +127,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝](https://t.me/RoyalUserBot_Official) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF** [𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝](https://t.me/RoyalBot_Official) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -136,7 +136,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_hell(event,
-              "⚜️𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝 Menu Provider Is now Closed⚜️\n\n         **[© 𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝 ™](t.me/RoyalUserBot_Official)**", 5, link_preview=False
+              "⚜️𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝 Menu Provider Is now Closed⚜️\n\n         **[© 𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝 ™](t.me/RoyalBot_Official)**", 5, link_preview=False
             )
         else:
             royal_alert = "Ho gya aapka? Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © 𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝 ™"
