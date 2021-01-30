@@ -11,8 +11,8 @@
 
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
 
-This is the one and only official RoyalBot Userbot made by [@No_Needz_Approval](https://t.me/No_Needz_Approval) Also join support channel and group :- https://t.me/RoyalUserBot_Support Enjoy Your Bot!!💝
-[![RoyalBot logo](https://telegra.ph/file/b3818868fea51e007bae6.jpg)](https://t.me/RoyalUserBot_Official)
+This is the one and only official RoyalBot Userbot made by [@No_Needz_Approval](https://t.me/No_Needz_Approval) Also join support channel and group :- https://t.me/RoyalBot_Support_Group Enjoy Your Bot!!💝
+[![RoyalBot logo](https://telegra.ph/file/b3818868fea51e007bae6.jpg)](https://t.me/RoyalBot_Official)
 
 
 ### The owner would not be responsible for any kind of bans due to the bot...
@@ -25,8 +25,8 @@ This is the one and only official RoyalBot Userbot made by [@No_Needz_Approval](
 ## One and only. Others with some misfuntioning brain stay out from this SUPER POWERFULL BOT😏
 
 ## Official Support
-<a href="https://t.me/RoyalUserBot_Official"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/RoyalUserBot_Support"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/RoyalBot_Official"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/RoyalBot_Support_Group"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 ## Video Tutorial
 <a href="https://youtu.be/M2FQJq_sHp4"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
