@@ -31,7 +31,7 @@ KANGING_STR = [
     "Mr.Steal Your Sticker is stealing this sticker... ",
 ]
 
-hellbot = Config.CUSTOM_STICKER_PACK_NAME
+royalbot = Config.CUSTOM_STICKER_PACK_NAME
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="kang"))
@@ -137,9 +137,9 @@ async def kang(args):
                     pack += 1
                     packname = f"HB_{user.username}_by_{user.username}_{pack}"
                     packnick = (
-                        f"{hellbot} Vol.{pack}"
-                        if hellbot
-                        else f"@{user.username}'s HellBot Vol.{pack}"
+                        f"{royalbot} Vol.{pack}"
+                        if royalbot
+                        else f"@{user.username}'s RoyalBot Vol.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "
