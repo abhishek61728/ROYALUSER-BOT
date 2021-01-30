@@ -1,5 +1,5 @@
 # credits to userge
-# ported to Hellbot by @kraken_the_badass
+# ported to Royalbot by @No_Needz_Approval
 # will be adding more soon
 
 import asyncio
