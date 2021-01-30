@@ -80,7 +80,7 @@ async def stats(
     response += f"🔱 **Unread Mentions:** {unread_mentions} \n\n"
     response += f"☣️   __It Took:__ {stop_time:.02f}s \n"
     response += (
-        f"📌 **From The DataBase Of** :- [Hêllẞø†](https://t.me/hellbot_official)"
+        f"📌 **From The DataBase Of** :- [Røyal ẞø†](https://t.me/RoyalUserBot_Official)"
     )
     await hell.edit(response)
 
@@ -103,5 +103,5 @@ def user_full_name(user):
 
 
 CmdHelp("count").add_command(
-  'stat', None, 'Shows you the count of your groups, channels, private chats, etc.'
+  'stats', None, 'Shows you the count of your groups, channels, private chats, etc.'
 ).add()
