@@ -63,9 +63,9 @@ def load_module(shortname):
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
         mod.delete_hell = delete_hell
-        # support for hellbot originals
-        sys.modules["hellbot.utils"] = userbot.utils
-        sys.modules["hellbot"] = userbot
+        # support for royalbot
+        sys.modules["royalbot.utils"] = userbot.utils
+        sys.modules["royalbot"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
