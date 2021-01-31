@@ -9,9 +9,9 @@ from userbot import ALIVE_NAME, BIO_MSG, CMD_HELP
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt"
+DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "ʟɛɢɛռɖaʀʏ ᴀғ 𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝"
 DEL_TIME_OUT = 60
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Royal User"
 
 
 @bot.on(admin_cmd(pattern="autoname"))  # pylint:disable=E0602
