@@ -67,7 +67,7 @@ async def git_commit(file_name, royalbot):
     for i in content_list:
         create_file = True
         if i == 'ContentFile(path="' + file_name + '")':
-            return await hellbot.edit("`File Already Exists`")
+            return await royalbot.edit("`File Already Exists`")
             create_file = False
     file_name = "userbot/plugins/" + file_name
     if create_file == True:
@@ -80,7 +80,7 @@ async def git_commit(file_name, royalbot):
             print("Committed File")
             ccess = Var.GIT_REPO_NAME
             ccess = ccess.strip()
-            await hellbot.edit(
+            await royalbot.edit(
                 f"`Commited On Your Github Repo`\n\n[Your STDPLUGINS](https://github.com/{ccess}/tree/master/userbot/plugins/)"
             )
         except:
