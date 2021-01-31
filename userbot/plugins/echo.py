@@ -1,5 +1,6 @@
 # Echo remastered by @Kraken_The_BadASS for Hêllẞø†
 # Codes by @mrconfused
+# Modified By @No_Needz_Approval For 𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝
 # Kang with credits
 
 import asyncio
