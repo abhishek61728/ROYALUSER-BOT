@@ -1,6 +1,3 @@
-"""Available Commands:
-.mf"""
-
 import asyncio
 
 from telethon import functions
