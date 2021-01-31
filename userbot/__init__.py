@@ -150,7 +150,7 @@ except:
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/HellBoy-OP/HellBot.git")
+    "https://github.com/abhishek61728/ROYALUSER-BOT")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
