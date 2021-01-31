@@ -13,7 +13,7 @@ Syntax:
 # Licensed under MIT License
 # Fixed By @StarkxD
 # Added sudo_cmd and fixed bugs by @Kraken_The_BadASS
-
+# Modified By @No_Needz_Approval For 𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝
 import asyncio
 import json
 import math
