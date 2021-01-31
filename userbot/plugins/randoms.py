@@ -1,7 +1,7 @@
 # Made By @Kraken_The_BadASS. Keep Credit if you are gonna copy paste it. LOL NOOBS....
 # Exclusive plugins from my channel @testpy12
 # Also some from my bro's channel @pyforub......(sawan me lagg gai aag🔥🔥🔥🔥🔥🔥🔥🔥)
-# Now in hellbot....
+# Now in Royalbot....
 
 import random
 from asyncio import sleep
@@ -10,7 +10,7 @@ from userbot import CMD_HELP, ALIVE_NAME
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Royal User"
 
 kraken = bot.uid
 
