@@ -1,4 +1,4 @@
-# Ascii module by @kraken_the_badass for @hellbot_official
+# Ascii module by @No_Needz_Approval for @RoyalBot_Official
 # A over powerful bot
 # I know u will kang...
 # GTFO!! MOTHERFUCKER!!!!!!!!!!!
@@ -11,7 +11,7 @@ from userbot import ALIVE_NAME, CMD_HELP
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Royal User"
 
 USERID = bot.uid
 
