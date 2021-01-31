@@ -143,9 +143,9 @@ async def promote(promt):
         return
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await hellevent.edit("`Promoted Successfully! Abb nacho bencho💃🕺`")
+        await royalevent.edit("`Promoted Successfully! Abb nacho bencho💃🕺`")
     except BadRequestError:
-        await hellevent.edit(NO_PERM)
+        await royalevent.edit(NO_PERM)
         return
     if BOTLOG:
         await promt.client.send_message(
@@ -208,7 +208,7 @@ async def ban(bon):
     user, reason = await get_user_from_event(bon)
     if not user:
         return
-    hellevent = await edit_or_reply(bon, "`Banning this retard`")
+    royalevent = await edit_or_reply(bon, "`Banning this retard`")
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
     except BadRequestError:
@@ -325,19 +325,19 @@ async def kick(usr):
     if not user:
         await edit_or_reply(usr, "`Couldn't fetch user.`")
         return
-    hellevent = await edit_or_reply(usr, "`Kicking...`")
+    royalevent = await edit_or_reply(usr, "`Kicking...`")
     try:
         await usr.client.kick_participant(usr.chat_id, user.id)
         await sleep(0.5)
     except Exception as e:
-        await hellevent.edit(NO_PERM + f"\n{str(e)}")
+        await royalevent.edit(NO_PERM + f"\n{str(e)}")
         return
     if reason:
-        await hellevent.edit(
+        await royalevent.edit(
             f"`Kicked` [{user.first_name}](tg://user?id={user.id})`!`\nReason: {reason}"
         )
     else:
-        await hellevent.edit(f"`Kicked` [{user.first_name}](tg://user?id={user.id})`!`")
+        await royalevent.edit(f"`Kicked` [{user.first_name}](tg://user?id={user.id})`!`")
     if BOTLOG:
         await usr.client.send_message(
             BOTLOG_CHATID,
