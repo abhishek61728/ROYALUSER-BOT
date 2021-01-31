@@ -37,7 +37,7 @@ pm_caption += "😆OWNER😆        : [NOOB HERE](https://t.me/Apoorvroy86)\n"
 
 pm_caption += "🤩SUPPORTER🤩: [HELLBOY](https://t.me/Kraken_The_BadASS)\n"
 
-pm_caption += "    [✨REPO✨](https://github.com/abhishek61728/ROYALUSER-BOT) 🔹 [📜License📜](https://github.com/abhishek61728/ROYALUSER-BOT/blob/main/LICENSE)"
+pm_caption += "    [✨REPO✨](https://github.com/abhishek61728/ROYALUSER-BOT) 🔹 [📜LICENSE📜](https://github.com/abhishek61728/ROYALUSER-BOT/blob/main/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
