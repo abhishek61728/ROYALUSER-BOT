@@ -9,14 +9,14 @@ from userbot.cmdhelp import CmdHelp
 from userbot import *
 from userbot.utils import *
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Royal User"
 
 
 @bot.on(admin_cmd(pattern="imp(|n) (.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="imp(|n) (.*)", allow_sudo=True))
 async def _(event):
-    kraken = bot.uid
-    USERNAME = f"tg://user?id={kraken}"
+    royal = bot.uid
+    USERNAME = f"tg://user?id={Royal}"
     name = event.pattern_match.group(2)
     cmd = event.pattern_match.group(1).lower()
     text1 = await edit_or_reply(event, "Hmm... Looks like Something is wrong here🤔🧐!!")
