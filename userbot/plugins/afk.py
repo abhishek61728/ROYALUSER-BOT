@@ -54,7 +54,7 @@ async def set_not_afk(event):
                 event.chat_id,
                 "Please set `PRIVATE_GROUP_BOT_API_ID` "
                 + "for the proper functioning of afk functionality "
-                + "Ask in @HellBot_Official_Chat to get help setting this value\n\n `{}`".format(str(e)),
+                + "Ask in @RoyalBot_Support_Group to get help setting this value\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )
@@ -106,7 +106,7 @@ async def on_afk(event):
 async def _(event):
     if event.fwd_from:
         return
-    krakenop = await event.get_reply_message()
+    royalop = await event.get_reply_message()
     global USER_AFK  # pylint:disable=E0602
     global afk_time  # pylint:disable=E0602
     global last_afk_message  # pylint:disable=E0602
@@ -121,20 +121,20 @@ async def _(event):
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     reason = event.pattern_match.group(1)
-    royalpic = await event.client.download_media(krakenop)
+    royalpic = await event.client.download_media(royalop)
     if not USER_AFK:  # pylint:disable=E0602
         last_seen_status = await borg(  # pylint:disable=E0602
             functions.account.GetPrivacyRequest(types.InputPrivacyKeyStatusTimestamp())
         )
         if isinstance(last_seen_status.rules, types.PrivacyValueAllowAll):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
-        USER_AFK = f"yes: {reason} {hellpic}"  # pylint:disable=E0602
+        USER_AFK = f"yes: {reason} {royalpic}"  # pylint:disable=E0602
         if reason:
             await borg.send_message(
                 event.chat_id, f"__**I'm going afk🚶**__ \n⚜️ Because `{reason}`", file=royalpic
             )
         else:
-            await borg.send_message(event.chat_id, f"**I am Going afk!**🚶", file=hellpic)
+            await borg.send_message(event.chat_id, f"**I am Going afk!**🚶", file=royalpic)
         await asyncio.sleep(0.001)
         await event.delete()
         try:
