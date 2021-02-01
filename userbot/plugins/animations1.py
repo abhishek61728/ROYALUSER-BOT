@@ -135,7 +135,7 @@ async def _(event):
         "`Connecting To Raj Bhawan`",
         "`Call Connected.`",
         "`Secretary: Hello This is Raj Bhawan. Who is this?`",
-        f"`Me: Hello this is` `{DEFAULUSER}` .Please connect me to Prime Minister",
+        f"`Me: Hello this is` `{DEFAULTUSER}` .Please connect me to Prime Minister",
         "`User Authorised.`",
         "`Calling`  `At +9189*#*#*#56`",
         "`Private  Call Connected...`",
@@ -168,7 +168,7 @@ async def _(event):
         idd = reply_message.from_id
         if idd == 924138714:
             await event.edit(
-                "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [HellBoy](https://t.me/kraken_the_badass) __to release your account__😏"
+                "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [ROYAL](https://t.me/No_Needz_Approval) __to release your account__😏"
             )
         else:
             await event.edit("`K i l l i n g . . . . . . .`")
