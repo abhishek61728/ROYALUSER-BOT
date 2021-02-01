@@ -180,7 +180,7 @@ async def _(dyno):
         thumb = hell_logo
     except:
         return await dyno.reply(
-            " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku\n\n[Visit Support Group For Help](https://t.me/hellbot_official_chat)"
+            " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku\n\n[Visit Support Group For Help](https://t.me/RoyalBot_Support_Group)"
         )
     hell_data = app.get_log()
     hell_key = (
