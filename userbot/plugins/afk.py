@@ -113,7 +113,7 @@ async def _(event):
     global afk_start
     global afk_end
     global reason
-    global hellpic
+    global royalpic
     USER_AFK = {}
     afk_time = None
     last_afk_message = {}
