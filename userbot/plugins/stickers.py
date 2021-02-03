@@ -29,6 +29,7 @@ KANGING_STR = [
     "Roses are red violets are blue, kanging this sticker so my pacc looks cool",
     "Imprisoning this sticker...",
     "Mr.Steal Your Sticker is stealing this sticker... ",
+    "Chura Liya Bhencho Abb Bol...",
 ]
 
 royalbot = Config.CUSTOM_STICKER_PACK_NAME
@@ -99,11 +100,11 @@ async def kang(args):
                 # pack
                 emoji = splat[1]
 
-        packname = f"HB_{user.username}_Hellbot_{pack}"
+        packname = f"HB_{user.username}_Royalbot_{pack}"
         packnick = (
-            f"{hellbot} Vol.{pack}"
-            if hellbot
-            else f"@{user.username}'s HellBot Vol.{pack}"
+            f"{royalbot} Vol.{pack}"
+            if royalbot
+            else f"@{user.username}'s RoyalBot Vol.{pack}"
         )
         cmd = "/newpack"
         file = io.BytesIO()
