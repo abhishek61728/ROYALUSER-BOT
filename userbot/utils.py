@@ -62,10 +62,10 @@ def load_module(shortname):
         mod.Config = Config
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
-        mod.delete_hell = delete_hell
+        mod.delete_royal = delete_royal
         # support for hellbot originals
-        sys.modules["hellbot.utils"] = userbot.utils
-        sys.modules["hellbot"] = userbot
+        sys.modules["royalbot.utils"] = userbot.utils
+        sys.modules["royalbot"] = userbot
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
@@ -114,12 +114,12 @@ def admin_cmd(pattern=None, command=None, **args):
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(Config.COMMAND_HAND_LER) == 2:
-                hellreg = "^" + Config.COMMAND_HAND_LER
+                royalreg = "^" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER[1]
             elif len(Config.COMMAND_HAND_LER) == 1:
-                hellreg = "^\\" + Config.COMMAND_HAND_LER
+                royalreg = "^\\" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(hellreg + pattern)
+            args["pattern"] = re.compile(royalreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -179,12 +179,12 @@ def sudo_cmd(pattern=None, command=None, **args):
                 SUDO_LIST.update({file_test: [cmd]})
         else:
             if len(Config.SUDO_COMMAND_HAND_LER) == 2:
-                hellreg = "^" + Config.SUDO_COMMAND_HAND_LER
+                royalreg = "^" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.SUDO_COMMAND_HAND_LER[1]
             elif len(Config.SUDO_COMMAND_HAND_LER) == 1:
-                hellreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
+                royalreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(hellreg + pattern)
+            args["pattern"] = re.compile(royalreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -283,13 +283,13 @@ async def edit_or_reply(
     await event.delete()
     os.remove(file_name)
 
-async def delete_hell(event, text, time=None, parse_mode=None, link_preview=None):
+async def delete_royal(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
     link_preview = link_preview or False
     time = time or 5
     if event.sender_id in Config.SUDO_USERS:
         reply_to = await event.get_reply_message()
-        hellevent = (
+        royalevent = (
             await reply_to.reply(text, link_preview=link_preview, parse_mode=parse_mode)
             if reply_to
             else await event.reply(
@@ -297,11 +297,11 @@ async def delete_hell(event, text, time=None, parse_mode=None, link_preview=None
             )
         )
     else:
-        hellevent = await event.edit(
+        royalevent = await event.edit(
             text, link_preview=link_preview, parse_mode=parse_mode
         )
     await asyncio.sleep(time)
-    return await hellevent.delete()
+    return await royalevent.delete()
 
 # from paperplaneextended
 on = bot.on
