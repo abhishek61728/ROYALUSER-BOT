@@ -8,7 +8,7 @@ from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
-HELL_NAME = str(ALIVE_NAME) if ALIVE_NAME else "Hêllẞø†"
+HELL_NAME = str(ALIVE_NAME) if ALIVE_NAME else "𝚁𝚘𝚢𝚊𝚕-𝙱𝚘𝚝"
 
 kraken = bot.uid
 
@@ -23,7 +23,7 @@ async def _(event):
     if event.fwd_from:
         return
     if Config.PLUGIN_CHANNEL is None:
-        await edit_or_reply(event, "Please set the required environment variable `PLUGIN_CHANNEL` for this plugin to work\n\nGo to [HellBot Chat Group](t.me/hellbot_official_chat) for assistance"
+        await edit_or_reply(event, "Please set the required environment variable `PLUGIN_CHANNEL` for this plugin to work\n\nGo to [RoyalBot Chat Group](t.me/RoyalBot_Support_Group) for assistance"
         )
         return
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
