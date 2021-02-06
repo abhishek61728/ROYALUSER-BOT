@@ -80,7 +80,7 @@ async def stats(
     response += f"🔱 **Unread Mentions:** {unread_mentions} \n\n"
     response += f"☣️   __It Took:__ {stop_time:.02f}s \n"
     response += (
-        f"📌 **From The DataBase Of** :- [Røyal ẞø†](https://t.me/RoyalUserBot_Official)"
+        f"📌 **From The DataBase Of** :- [Røyal ẞø†](https://t.me/RoyalBot_Official)"
     )
     await hell.edit(response)
 
