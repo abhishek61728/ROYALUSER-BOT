@@ -19,7 +19,7 @@ else:
 
 royal = bot.uid
 
-PM_IMG = "https://telegra.ph/file/9e65e54d5a0a63de23b51.mp4"
+PM_IMG = "https://telegra.ph/file/c3db400c8952d1919e74a.mp4"
 pm_caption = "__**🔥🔥RȏʏѧʟUṡєя-Bȏṭ🔥🔥**__\n\n"
 
 pm_caption += (
