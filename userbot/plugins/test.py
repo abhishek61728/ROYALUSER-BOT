@@ -30,7 +30,7 @@ async def _(event):
         await asyncio.sleep(2)
         await edit_or_reply(event, "__Output Generated Successfully__")
         await asyncio.sleep(2)
-        await edit_or_reply(event, "**SAVING OUTPUT TO HELLBOT LOCAL DATABASE**")
+        await edit_or_reply(event, "**SAVING OUTPUT TO ROYALBOT LOCAL DATABASE**")
         await asyncio.sleep(3.5)
         await edit_or_reply(event, 
             "Your[RȏʏѧʟBȏṭ](https:/t.me/RoyalBot_Official) is working Fine...\n       Join @RoyalBot_Support_Group For Any Help......"
