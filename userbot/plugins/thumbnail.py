@@ -129,7 +129,7 @@ async def _(event):
         
 
 CmdHelp("thumbnail").add_command(
-  "sthumb", "<reply to media>", "Saves the thumbnail of replied media to hellbot download directory. To get the thumbnail type .upload ./DOWNLOADS/thumb_image.jpg"
+  "sthumb", "<reply to media>", "Saves the thumbnail of replied media to royalbot download directory. To get the thumbnail type .upload ./DOWNLOADS/thumb_image.jpg"
 ).add_command(
   "gthumb", None, "Gets the currently saved thumbnail from Downloads Directory"
 ).add_command(
