@@ -44,7 +44,7 @@ async def _(event):
     await borg.send_file(  # pylint:disable=E0602
         event.chat_id,
         required_file_name,
-        caption="HellBot",
+        caption="RoyalBot",
         # Courtesy: @ManueI15
         reply_to=reply_msg_id,
     )
