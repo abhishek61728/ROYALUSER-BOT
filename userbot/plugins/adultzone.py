@@ -1,5 +1,5 @@
 # credits to userge
-# ported to Royal Userbot by @No_Needz_Approval
+# ported to this bot by Devil. 
 # will be adding more soon
 
 import asyncio
@@ -10,11 +10,13 @@ import requests
 
 from userbot import *
 from userbot.utils import *
-
+from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd("boobs$"))
 @bot.on(sudo_cmd(pattern="boobs$", allow_sudo=True))
 async def boobs(event):
+    if event.fwd_from:
+        return
     if not os.path.isdir(Var.TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Var.TEMP_DOWNLOAD_DIRECTORY)
     pic_loc = os.path.join(Var.TEMP_DOWNLOAD_DIRECTORY, "bobs.jpg")
@@ -32,6 +34,8 @@ async def boobs(event):
 @bot.on(admin_cmd("butts$"))
 @bot.on(sudo_cmd(pattern="butts$", allow_sudo=True))
 async def butts(event):
+    if event.fwd_from:
+        return
     if not os.path.isdir(Var.TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Var.TEMP_DOWNLOAD_DIRECTORY)
     pic_loc = os.path.join(Var.TEMP_DOWNLOAD_DIRECTORY, "butts.jpg")
@@ -45,14 +49,8 @@ async def butts(event):
     await event.delete()
     await a.delete()
 
-
-CMD_HELP.update(
-    {
-        "adultzone": "**Plugin : **`adultzone`\
-        \n\n**Syntax : **`.boobs`\
-        \n**Usage :** Searchs and sends random B××Bs image\
-        \n\n**Syntax :**`.butts`\
-        \n**Usage :** Searchs and sends random Butts image\
-        \n\n\n     __**WARNING!! 18+ MODULE**__"
-    }
-)
+CmdHelp("adultzone").add_command(
+  'boobs', None, 'Sends a random boobs pic'
+).add_command(
+  'butts', None, 'Sends a random Butt pic'
+).add()
