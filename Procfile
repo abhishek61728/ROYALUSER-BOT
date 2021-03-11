@@ -1,1 +1,1 @@
-userbot: python -m userbot
+worker: bash royalbot
