@@ -10,4 +10,4 @@ RUN pip3 install -U -r requirements.txt
 
 ENV PATH="/home/userbot/bin:$PATH"
 
-CMD ["bash","startup.sh"]
+CMD ["python3","-m",userbot"]
